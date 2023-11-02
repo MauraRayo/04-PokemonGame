@@ -34,7 +34,7 @@ const promiseArr = [
     pokemonApi.get(`/${d}`)
 ]
 
- const [ p1, p2 ,p3, p4 ] = await promise.all(promiseArr)
+ const [ p1, p2 ,p3, p4 ] = await promise.all()
  return [
     { name: p1.data.name, id: p1.data.id},
     { name: p2.data.name, id: p2.data.id},
